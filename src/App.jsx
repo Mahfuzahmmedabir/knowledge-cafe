@@ -1,18 +1,16 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import Blogs from './commponent/Blogs/Blogs';
+import Bookmark from './commponent/Bookmark/Bookmark';
+import Header from './commponent/Header/Header';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      
-      <h1>Vite + React</h1>
-      <h2 className="text-3xl  w-48  font-bold underline">
-        Software as a serivec
-      </h2>
+      <Header></Header>
+
+      <div className="md:flex mt-10">
+        <Blogs></Blogs>
+        <Bookmark></Bookmark>
+      </div>
     </>
   );
 }
